@@ -1,0 +1,124 @@
+
+.App{
+    background-color: antiquewhite;
+    font-size: 16px;
+    font-size: "monserrat";
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    width: 40%;
+    text-align: right;
+    border-radius: 10px;
+    border: 1px solid#ccc;
+    background-color: rgba(0, 0, 0, 0.125);
+}
+.container h2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #61077c;
+    font-family: "sans-serif";
+    font-weight: bold;
+}
+.container input{
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #524e4e;
+
+}
+button {
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: auto; 
+}
+.container button{
+    font-family: "verdana";
+    font-weight: 700;
+    background-color: #272626;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 20px;
+    width: 25%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 6px;
+    align-items: right;
+    justify-content: center;
+}
+.icons {
+    font-size: 16px;
+    font-family: "sans-serif";
+    position: fixed;
+    top: 30%;
+    width: 35%;
+    height:25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    text-align: center;  
+    flex-direction: row;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .items {
+    flex-direction: column;
+    padding: 10px 3%;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .items p{
+      margin: 0;
+  }
+  .items p:hover {
+    color: #007bff;
+  }
+  .field-items{
+    display: flex;
+    flex-direction: column;
+  }
+
+@media (max-width: 600px){
+    .container{
+        width:100%;
+    }
+    
+}
+@media (max-width: 600px){
+    .icons{
+        width:100%;
+    }
+    
+}
+@media ( min-width: 600px) and (max-width: 1300px){
+    .icons{
+        width:60%;
+    }
+}
